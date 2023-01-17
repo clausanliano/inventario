@@ -6,10 +6,9 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-
     public function up()
     {
-        Schema::create('fornecedores', function (Blueprint $table) {
+        Schema::create('tipos_servico', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
             $table->text('observacao')->nullable();
@@ -17,9 +16,8 @@ return new class extends Migration
         });
     }
 
-
     public function down()
     {
-        Schema::dropIfExists('fornecedores');
+        Schema::dropIfExists('tipos_servico');
     }
 };
