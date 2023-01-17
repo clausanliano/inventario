@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FabricanteController;
+use App\Http\Controllers\FornecedorController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 //Route::resource('fabricante', FabricanteController::class)->except(['create', 'edit'])->middleware('auth:sanctum');
 Route::resource('fabricante', FabricanteController::class)->except(['create', 'edit']);
+Route::resource('fornecedor', FornecedorController::class)->except(['create', 'edit']);
