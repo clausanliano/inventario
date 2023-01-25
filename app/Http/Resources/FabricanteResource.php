@@ -11,8 +11,8 @@ class FabricanteResource extends JsonResource
         //return parent::toArray($request);
 
         return [
-            'id_fabricante' => $this->id,
-            'nome_fabricante' => $this->nome,
+            'id' => $this->id,
+            'nome' => $this->nome,
         ];
     }
 }
